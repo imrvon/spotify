@@ -8,6 +8,12 @@
     font-family: "Circular Spotify Tx T Black";
 }
 
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* Menu Section */
 
 #menu {
@@ -384,4 +390,231 @@ footer .second-container .copyright p {
 
 .premium-bottom {
     background-color: #efefef;
+    padding-bottom: 5rem;
+}
+
+.premium-bottom .heading h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.premium-bottom .heading h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0.625rem;
+}
+
+.premium-bottom .pricing {
+    padding: 1rem 1rem 0;
+    border-radius: 0.625rem;
+    box-shadow: rgb(255 255 255) 0px 8px 0px 0px, rgb(0 0 0 / 30%) 0px 0px 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.pricing-boxes {
+    display: flex;
+    gap: 1rem;
+}
+
+.pricing {
+    position: relative;
+    height: 570px;
+    margin-top: 3.125rem;
+    flex: 1 1 0;
+}
+
+.pricing .first {
+    background-color: rgb(46, 119, 208);
+    color: #ffffff;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.625rem;
+    width: fit-content;
+}
+
+.pricing .second {
+    color: rgb(46, 119, 208);
+    background-color: rgb(255, 255, 255);
+    border: thin solid rgb(46, 119, 208);
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.625rem;
+    width: fit-content;
+}
+
+.pricing h3{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.pricing .third {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.125rem;
+}
+
+.pricing .fourth {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-bottom: 1.25rem;
+}
+
+.pricing hr {
+    position:absolute;
+    top: 200px;
+    border-top-color: rgb(204, 204, 204);
+    width: 90%;
+    margin: 0 auto;
+}
+
+#arrow-and-text {
+    position:absolute;
+    top: 210px;
+    margin-top: 1.25rem;
+    margin-bottom: 3.5rem;
+}
+
+.arrow-and-text {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding-bottom: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.pricing .started {
+    position:absolute;
+    top: 420px;
+    display: inline-block;
+    background-color: #191414;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    user-select: none;
+    padding: 0.9rem 4.5rem;
+    border-radius: 31.25rem;
+    outline: 0;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 1rem;
+}
+
+.pricing .started:hover {
+    transform: scale(1.03);
+}
+
+.pricing .last {
+    position:absolute;
+    top: 490px;
+    font-size: 0.75rem;
+    color: rgb(83, 83, 83);
+    padding-bottom: 1rem;
+}
+
+.pricing .last a{
+    color: rgb(83, 83, 83);
+    text-decoration: underline;
+}
+
+
+/* Support Page*/
+
+/* First Section */
+.support {
+    background: url(img/search-desktop.webp) top/100% no-repeat #052a56;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.support h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    padding: 5rem 0 2.5rem;
+}
+
+.support input[type=text] {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z' %3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    font-size: 1rem;
+    font-stretch: 100%;
+    padding: 0.9rem 0.9rem 0.9rem 3rem;
+    color: #6a6a6a;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 1px #878787;
+    transition: box-shadow 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+    border-radius: 0.25rem;
+    border: 0;
+    outline: 0;
+    margin-bottom: 1.5rem;
+}
+
+.support input[type=text]:hover{
+    box-shadow: inset 0 0 0 1px #000000;
+}
+
+.support-four {
+    display: flex;
+    justify-content: center;
+    gap: 2.2rem;
+    padding: 1.9rem 0 2.5rem;
+}
+
+.support-four h3{
+    font-size: 0.8rem;
+    letter-spacing: 0.08rem;
+    line-height: 20px;
+    margin: 0.5rem 0;
+    color: #d9d9d9;
+    text-transform: uppercase;
+}
+
+.support-four a{
+    font-size: 1.125rem;
+    cursor: pointer;
+    color: #ffffff;
+    margin-bottom: 0.94rem;
+    line-height: rgb(255, 255, 255);
+}
+
+/* Help Section */
+
+.help {
+    background-color: #eee;
+    padding: 1.9rem 0 1.25rem;
+}
+
+.help-group {
+    display: flex;
+    justify-content: center;
+    /* gap: 10rem; */
+}
+
+.help-group a{
+    display: block;
+}
+
+.help-item {
+    padding: 1rem;
+    width: 25%;
+}
+
+.help-item h3{
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.04em;
+    padding-bottom: 1.5rem;
+}
+
+.help-item a {
+    margin-bottom: 0.9rem;
+    font-size: 1.125rem;
+    color: #117a37;
+
 }
