@@ -583,6 +583,10 @@ footer .second-container .copyright p {
     line-height: rgb(255, 255, 255);
 }
 
+.support-four a:hover {
+    text-decoration: underline;
+}
+
 /* Help Section */
 
 .help {
@@ -616,6 +620,10 @@ footer .second-container .copyright p {
     margin-bottom: 0.9rem;
     font-size: 1.125rem;
     color: #117a37;
+}
+
+.help-item a:hover{
+    text-decoration: underline;
 }
 
 /* Visit Community */
@@ -659,4 +667,190 @@ footer .second-container .copyright p {
 .visit-community a:hover {
     transform: scale(1.03);
     background-color: #22ee69;
+}
+
+/* Download Page */
+
+.download-top {
+    background-color: rgb(25, 230, 140);
+    padding: 2.5rem 0.94rem 6.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.download-top .download-imgs {
+    width: 8.5rem;
+    max-width: 15.6rem;
+    margin: 4rem 0.9rem 2.5rem;
+    position: relative;
+}
+
+.download-imgs .one{
+    width: 100%;
+}
+
+.download-imgs .two {
+    position: absolute;
+    width: 25%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 0.6s ease 0s 1 normal forwards running one-circle;
+}
+
+.download-imgs .three{
+    position: absolute;
+    width: 8%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: 0.3s ease 0.9s 1 normal forwards running two-check;
+}
+
+@keyframes one-circle {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes two-check {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 50%);
+    }
+    
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+.download-top h1{
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+.download-top p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.download-top a{
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    border-radius: 31.25rem;
+    display: inline-block;
+    user-select: none;
+    padding: 0.9rem 2rem;
+    background-color: #ffffff;
+    color: #000;
+    line-height: 1.25rem;
+    outline: 0;
+    border: 0;
+}
+
+.download-top a:hover {
+    transform: scale(1.03);
+}
+
+/*Download Second Section */
+.bring-music {
+    text-align: center;
+    padding: 4.4rem 0.9rem;
+}
+
+.bring-music h3{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-bottom: 1.6rem;
+}
+
+.bring-music p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.download-icons {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 1rem;
+}
+
+.download-icons img{
+    cursor: pointer;
+    height: 2.5rem;
+    margin: 0.6rem 0;
+    object-fit: contain;
+}
+
+.download-icons .smaller {
+    height: 3.6rem;
+}
+
+/* Devices Section */
+.devices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4.4rem 0.9rem 3rem;
+    background-color: rgb(34, 35, 38);
+    color: #ffffff;
+}
+
+.devices-img {
+    max-width: 35rem;
+    width: 100%;
+    padding-bottom: 2.5rem;
+}
+
+.devices-img img{
+    width: 100%;
+}
+
+.devices h3{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-bottom: 1.5rem;
+    letter-spacing: -0.03rem
+}
+
+.all-devices {
+    padding: 1rem;
+}
+
+.all-devices span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
+
+.all-devices span a{
+    color: rgb(29, 185, 84);
+    text-decoration: underline;
+}
+
+.all-devices span a:hover {
+    color: #1ed760;
+}
+
+.all-devices span:not(:last-child)::after {
+    font-size: 22px;
+    content: "•";
+    padding-left: 14px;
+    padding-right: 14px;
+    color: rgb(29, 185, 84);
 }
