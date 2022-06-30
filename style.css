@@ -1,11 +1,83 @@
-@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Circular Spotify Tx T Black";
+    font-family: "Spotify", Helvetica, Arial, sans-serif;
+}
+
+*::after, *::before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Spotify";
+    src: url("fonts/CircularStd-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spotify";
+    src: url("fonts/CircularStd-Light\ Italic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spotify";
+    src: url("fonts/CircularStd-Book.otf") format("opentype");
+    font-weight: 350;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spotify";
+    src: url("fonts/CircularStd-BookItalic.otf") format("opentype");
+    font-weight: 350;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spotify";
+    src: url("fonts/CircularStd-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spotify";
+    src: url("fonts/CircularStd-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spotify";
+    src: url("fonts/CircularStd-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spotify";
+    src: url("fonts/CircularStd-BoldItalic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spotify";
+    src: url("fonts/CircularStd-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spotify";
+    src: url("fonts/CircularStd-BlackItalic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
 }
 
 body {
@@ -1045,7 +1117,6 @@ fieldset {
 }
 
 .input-one {
-    font-family: Arial, Helvetica, sans-serif;
     border: 0px;
     clip: rect(0px, 0px, 0px, 0px);
     height: 1px;
@@ -1128,7 +1199,6 @@ input:focus + label .radio-button::after {
     color: #000000;
     padding-left: 12px;
     padding-right: 24px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .legend-gender input{
@@ -1284,38 +1354,22 @@ input:checked + label .checkboxes {
     padding-bottom: 1rem;
 }
 
-/* .signup-form .tc-btn {
-    text-decoration: none;
+.signup-form .tc-btn:hover {
+    transform: scale(1.03);
+    background-color: #22ee69;
+}
+
+.btn-parent {
+    position: relative;
     font-size: 1rem;
     line-height: 1.5rem;
     border-radius: 31.25rem;
-    display: inline-block;
-    user-select: none;
-    padding: 1rem 3rem;
-    background-color: rgb(30, 215, 96);
-    color: #000;
-    line-height: 1.25rem;
-    outline: unset;
-    border: thin solid #ffffff;
-    margin-bottom: 1.5rem;
-} */
-
-/* .signup-form .tc-btn:hover {
-    transform: scale(1.03);
-    background-color: #22ee69;
-} */
-
-.btn-parent {
     box-sizing: border-box;
-    font-size: 16px;
-    line-height: 24px;
     background-color: transparent;
     border: 0px;
-    border-radius: 500px;
     display: inline-block;
     position: relative;
     text-align: center;
-    /* text-decoration: none; */
     touch-action: manipulation;
     transition-duration: 33ms;
     transition-property: background-color, border-color, color, box-shadow, filter, transform;
@@ -1324,17 +1378,22 @@ input:checked + label .checkboxes {
     transform: translate3d(0px, 0px, 0px);
     padding: 0px;
     align-self: center;
+    margin-bottom: 1.5rem;
+    background-color: #1ed760;
 }
 
 .tc-btn {
     position: relative;
-    background-color: #1ed760;
     color: #000000;
     border-radius: 500px;
-    font-size: inherit;
     padding: 16px 48px;
     cursor: pointer;
     width: 100%;
+}
+
+.btn-parent:focus .btn-focus {
+    border-color: #000000;
+    transform: scale(1.03);
 }
 
 .btn-focus {
@@ -1356,5 +1415,4 @@ input:checked + label .checkboxes {
     font-size: 1rem;
     padding-bottom: 1rem;
     line-height: 1.5rem;
-
 }
