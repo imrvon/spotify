@@ -854,3 +854,507 @@ footer .second-container .copyright p {
     padding-right: 14px;
     color: rgb(29, 185, 84);
 }
+
+
+/* Sign Up Page */
+
+#signup {
+    max-width: 28rem;
+    margin: 0 auto;
+    padding-bottom: 8rem;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0 2rem;
+    text-align: center;
+}
+.signup img{
+    height: 2.5rem;
+}
+
+.signup h2{
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.04rem;
+    padding: 2.5rem 0 2rem;
+}
+
+.signup-social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+}
+
+.signup-social img{
+    width: 1.5rem;
+}
+
+.signup .facebook {
+    background-color: #405A93;
+    color: #ffffff;
+    border-radius: 31.25rem;
+    padding: 0.4rem 6rem;
+    border: 0;
+    outline: 0;
+}
+
+.signup .facebook:hover {
+    background-color: #31446F;
+    transform: scale(1.03);
+}
+
+.signup .google {
+    color: #000;
+    border-radius: 31.25rem;
+    padding: 0.4rem 6rem;
+    border: 2px solid rgb(83, 83, 83);
+}
+
+.signup .google:hover {
+    transform: scale(1.03);
+}
+
+.signup .or-divider {
+    color: rgb(127, 127, 127);
+    line-height: 1.5rem;
+    letter-spacing: 0.125rem;
+    margin: 0 auto 1rem;
+    position: relative;
+    text-align: center;
+    width: 85%;
+    display: table;
+}
+
+.or-divider::before, .or-divider::after {
+    border-top: 1px solid rgb(204, 204, 204);
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.8em;
+    width: 42%;
+}
+
+/* Form */
+.signup-form input, .signup-form select {
+    display: block;
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 0 0 1px #878787;
+    border: 0;
+    outline: 0;
+    color: rgb(83, 83, 83);
+}
+
+.signup-form select {
+    padding-right: 2.5rem;
+    appearance: none;
+}
+
+.signup-form .month-wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.signup-form .month-wrap .pointer {
+    color:#878787;
+    pointer-events: none;
+    position: absolute;
+    right: 14px;
+    stroke-width: 0.8pt;
+}
+
+.signup-form label, .signup-form legend {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    padding-bottom: 0.5rem;
+}
+
+.signup-form a{
+    color: #117a37;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+}
+
+.form-text {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+/* Date of Birth Section */
+
+.signup-form .form-divs{
+    padding-bottom: 1.5rem;
+}
+
+.signup-form .dob-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.signup-form .form-divs label {
+   display: block;
+}
+
+.signup-form .dob-day {
+    width: 20%;
+}
+
+.signup-form .dob-month {
+    width: 45%;
+}
+
+.signup-form .dob-year {
+    width: 25%;
+}
+
+/* Gender Input Field */
+fieldset {
+    border: 0;
+}
+
+.gender-radio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.legend-gender {
+    display: flex;
+    align-items: center;
+    min-height: 2rem;
+    padding: 0.25rem 0;
+}
+
+.legend-gender .gender{
+    display: flex;
+    position: relative;
+}
+
+.input-one {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    width: 1px;
+}
+
+.radio-button::after {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    transition: border-color 200ms ease-in 0s;
+    box-sizing: border-box;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    top: -6px;
+    left: -6px;
+    background: transparent;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    content: "";
+}
+
+input:not(:checked) + label .radio-button {
+    background-color: #ffffff;
+    border: 1px solid #878787;
+    border-radius: 50%;
+    display: inline-block;
+    height: 16px;
+    user-select: none;
+    width: 16px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    top: 0px;
+    position: relative;
+}
+
+input:checked + label .radio-button::before {
+    background-color: #ffffff;
+    border-radius: 50%;
+    content: "";
+    height: 0.5em;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5em;
+}
+
+input:checked + label .radio-button {
+    background: #169b45;
+    border-radius: 50%;
+    display: inline-block;
+    height: 16px;
+    user-select: none;
+    width: 16px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    top: 0px;
+    position: relative;
+}
+
+input:not(:checked):focus + label .radio-button::after {
+    width: calc(100% + 12px + 2px);
+    height: calc(100% + 12px + 2px);
+    top: calc(-7px);
+    left: calc(-7px);
+}
+
+input:focus + label .radio-button::after {
+    border-color: var(--essential-base,#000000);
+}
+
+.gender .radio-text {
+    position: relative;
+    top: -2px;
+    color: #000000;
+    padding-left: 12px;
+    padding-right: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.legend-gender input{
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    width: 1px;
+}
+
+/* Checkboxes */
+
+input[type="checkbox"] {
+    width: auto;
+    box-shadow: unset;
+}
+
+.marketing-privacy-checkbox {
+    display: flex;
+    align-items: center;
+    min-height: 2rem;
+    padding: 0.25rem 0;
+}
+
+.signup-form .form-divs .marketing-privacy-label{
+    display: flex;
+    position: relative;
+}
+
+.marketing-privacy {
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    width: 1px;
+}
+
+.checkboxes {
+    box-sizing: border-box;
+    border-radius: 0.375rem;
+    display: inline-block;
+    height: 16px;
+    user-select: none;
+    width: 16px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    top: 0px;
+    position: relative;
+}
+
+.checkboxes::after {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    transition: border-color 200ms ease-in 0s;
+    box-sizing: border-box;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    top: -6px;
+    left: -6px;
+    background: transparent;
+    border-radius: 0.188rem;
+    border: 3px solid transparent;
+    content: "";
+}
+
+input:not(:checked) + label .checkboxes {
+    background-color: #ffffff;
+    border: 1px solid #878787;
+    border-radius: 0.188rem;
+    display: inline-block;
+    height: 16px;
+    user-select: none;
+    width: 16px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    top: 0px;
+    position: relative;
+}
+
+input:not(:checked):focus + label .checkboxes::after {
+    width: calc(100% + 12px + 2px);
+    height: calc(100% + 12px + 2px);
+    top: calc(-7px);
+    left: calc(-7px);
+}
+
+input:focus + label .checkboxes::after {
+    border-color: #000000;
+}
+
+input:checked + label .checkboxes::before {
+    box-sizing: border-box;
+    background-color: unset;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-color: #ffffff;
+    display: block;
+    content: "";
+    height: 5px;
+    width: 9px;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0px) rotate(-48deg);
+}
+
+input:checked + label .checkboxes {
+    background: #169b45;
+    border-width: 0px;
+    border-radius: 0.188rem;
+    display: inline-block;
+    height: 16px;
+    user-select: none;
+    width: 16px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    top: 0px;
+    position: relative;
+}
+
+.marketing-privacy-label .checkboxes-text {
+    position: relative;
+    top: -2px;
+    color: #000000;
+    padding-left: 12px;
+    padding-right: 24px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+/* Button */
+
+.signup-form .terms-condition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form .terms-condition p, .signup-form .terms-condition .tc {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/* .signup-form .tc-btn {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 31.25rem;
+    display: inline-block;
+    user-select: none;
+    padding: 1rem 3rem;
+    background-color: rgb(30, 215, 96);
+    color: #000;
+    line-height: 1.25rem;
+    outline: unset;
+    border: thin solid #ffffff;
+    margin-bottom: 1.5rem;
+} */
+
+/* .signup-form .tc-btn:hover {
+    transform: scale(1.03);
+    background-color: #22ee69;
+} */
+
+.btn-parent {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 500px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    /* text-decoration: none; */
+    touch-action: manipulation;
+    transition-duration: 33ms;
+    transition-property: background-color, border-color, color, box-shadow, filter, transform;
+    user-select: none;
+    vertical-align: middle;
+    transform: translate3d(0px, 0px, 0px);
+    padding: 0px;
+    align-self: center;
+}
+
+.tc-btn {
+    position: relative;
+    background-color: #1ed760;
+    color: #000000;
+    border-radius: 500px;
+    font-size: inherit;
+    padding: 16px 48px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-focus {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    transition: border-color 200ms ease-in 0s;
+    box-sizing: border-box;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    top: -6px;
+    left: -6px;
+    background: transparent;
+    border-radius: 500px;
+    border: 3px solid transparent;
+}
+
+.signup-form .form-divs .have-account {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+
+}

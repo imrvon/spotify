@@ -13,12 +13,130 @@
         <section class="signup">
             <img src="img/logo-and-spotify-.svg" alt="">
             <h2>Sign up for free to start listening.</h2>
-            <div>
+            <div class="signup-social facebook">
                 <img src="img/facebook-white.svg" alt="">
                 <span>Sign up with Facebook</span>
             </div>
-            <div></div>
+            <div class="signup-social google">
+                <img src="img/google-logo.svg" alt="">
+                <span>Sign up with Google</span>
+            </div>
+            <span class="or-divider">or</span>
+        </section>
+        <section class="signup-form">
+            <form action="">
+                <div class="form-divs">
+                    <label for="email">What's your email?</label>
+                    <input type="email" name="email" placeholder="Enter your email.">
+                    <a href="">Use phone number instead.</a>
+                </div>
+                <div class="form-divs">
+                    <label for="confirm-email">Confirm your email?</label>
+                    <input type="email" name="confirm-email" placeholder="Enter your email again.">
+                </div>
+                <div class="form-divs">
+                    <label for="password">Create a password</label>
+                    <input type="password" name="password" placeholder="Create a password.">
+                </div>
+                <div class="form-divs">
+                    <label for="username">What should we call you?</label>
+                    <input type="text" name="username" placeholder="Enter a profile name.">
+                    <p class="form-text">This appears on your profile.</p>
+                </div>
+                <div class="form-divs">
+                    <label class="dob dob-label">What's your date of birth?</label>
+                    <div class="dob-container">
+                        <div class="dob-day">
+                            <label for="day" class="dob">Day</label>
+                            <input type="text" aria-invalid="false" pattern="((0?[1-9])|([12][0-9])|(3[01]))"
+                            inputmode="numeric" maxlength="2" placeholder="DD" name="day" id="day">
+                        </div>
+                        <div class="dob-month">
+                            <label for="month" class="dob">Month</label>
+                            <div class="month-wrap">
+                                <select aria-invalid="false" placeholder="Month" name="month">
+                                    <option selected disabled value>Month</option>
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                                <svg role="img" focusable="false" height="16" width="16" viewBox="0 0 24 24"
+                                aria-hidden="true" class="pointer">
+                                    <polyline points="20 8 12 17 4 8" fill="none" stroke="#181818"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dob-year">
+                            <label for="year" class="dob">Year</label>
+                            <input type="text" aria-invalid="false" pattern="(19[0-9]{2})|(200)[0-9]"
+                            inputmode="numeric" maxlength="4" placeholder="YYYY" name="year">
+                        </div>
+                    </div>
+                </div>
+                <fieldset class="form-divs">
+                    <legend>What's your gender?</legend>
+                    <div class="gender-radio">
+                        <div class="legend-gender">
+                            <input type="radio" name="gender" id="gender-male" value="male" class="input-one">
+                            <label for="gender-male" class="gender">
+                                <span class="radio-button"></span>
+                                <span class="radio-text">Male</span>
+                            </label>
+                        </div>
+
+                        <div class="legend-gender">
+                            <input type="radio" name="gender" id="gender-female" value="female" class="input-one">
+                            <label for="gender-female" class="gender">
+                                <span class="radio-button"></span>
+                                <span class="radio-text">Female</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-divs marketing-privacy-div">
+                    <div class="marketing-privacy-checkbox">
+                        <input type="checkbox" name="marketing" id="marketing" class="marketing-privacy marketing">
+                        <label for="marketing" class="marketing-privacy-label marketing-label">
+                            <span class="checkboxes"></span>
+                            <span class="checkboxes-text">I would prefer not to receive marketing messages from Spotify</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-divs marketing-privacy-div">
+                    <div class="marketing-privacy-checkbox">
+                        <input type="checkbox" name="privacy" id="privacy" class="marketing-privacy privacy">
+                        <label for="privacy" class="marketing-privacy-label privacy-label">
+                            <span class="checkboxes"></span>
+                            <span class="checkboxes-text">Share my registration data with Spotify's 
+                                content providers for marketing purposes.</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-divs">
+                    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                </div>
+                <div class="form-divs terms-condition">
+                    <p>By clicking on sign-up, you agree to the <a href="#" class="tc">Spotify Terms and Conditions</a> 
+                        and <a href="" class="tc">Privacy Policy</a>.</p>
+                    <button class="btn-parent">
+                        <div class="tc-btn">Sign Up</div>
+                        <div class="btn-focus"></div>
+                    </button>
+                    <p class="have-account">Have an account? <a href="">Log in</a>.</p>
+                </div>
+            </form>
         </section>
     </main>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>
