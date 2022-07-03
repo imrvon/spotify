@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="login-all">
+        <header class="login-head">
+            <div class="logo-container">
+                <img src="img/logo-and-spotify-.svg" alt="" class="logo">
+            </div>
+            <div><hr></div>
+        </header>
+        
+        <main id="signup" class="login-main">
+            <section class="signup login">
+                <p>To continue, log in to Spotify.</p>
+                <div class="signup-social facebook login-social" tabindex="0">
+                    <img src="img/facebook-square.svg" alt="">
+                    <div class="btn-text">CONTINUE WITH FACEBOOK</div>
+                </div>
+                <div class="signup-social facebook apple login-social" tabindex="0">
+                    <img src="img/apple-icon.svg" alt="">
+                    <div class="btn-text">CONTINUE WITH APPLE</div>
+                </div>
+                <div class="signup-social google login-social" tabindex="0">
+                    <img src="img/google-logo.svg" alt="">
+                    <div class="btn-text">CONTINUE WITH GOOGLE</div>
+                </div>
+                <div class="signup-social phone-number google login-social" tabindex="0">
+                    <div class="btn-text">CONTINUE WITH PHONE NUMBER</div>
+                </div>
+                <span class="or-divider">OR</span>
+            </section>
+            <section class="signup-form login-form">
+                <form action="">
+                    <div class="form-divs">
+                        <label for="email">Email address or username</label>
+                        <input type="email" name="email" placeholder="Email address or username">
+                    </div>
+        
+                    <div class="form-divs">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" placeholder="Password.">
+                    </div>
+
+                    <a href="">Forgot your password?</a>
+                    
+                    <div class="form-divs marketing-privacy-div">
+                        <div class="marketing-privacy-checkbox">
+                            <input type="checkbox" name="privacy" id="privacy" class="marketing-privacy privacy">
+                            <label for="privacy" class="marketing-privacy-label privacy-label">
+                                <span class="checkboxes"></span>
+                                <span class="checkboxes-text">Remember me</span>
+                            </label>
+                        </div>
+                        <button class="btn-parent">
+                            <div class="tc-btn login-btn">LOG IN</div>
+                            <div class="btn-focus"></div>
+                        </button>
+                    </div>
+                    <hr>
+                </form>
+            </section>
+            <section class="signup login">
+                <h3>Don't have an account?</h3>
+                <div class="signup-social google login-social" tabindex="0">
+                    <span>SIGN UP FOR SPOTIFY</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+</html>
