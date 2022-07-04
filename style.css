@@ -1605,7 +1605,7 @@ input:checked + label .checkboxes {
 #about-us {
     max-width: 1200px;
     width: 100%;
-    padding-top: 5.25rem;
+    padding: 5.25rem 0 4rem;
 }
 
 #about-us .about-us-wrapper {
