@@ -86,6 +86,15 @@ body {
     margin: 0 auto;
 }
 
+/* About Page Addresses */
+address {
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
 /* Menu Section */
 
 #menu {
@@ -1589,4 +1598,117 @@ input:checked + label .checkboxes {
 
 .login-main .login-signup {
     gap: unset;
+}
+
+/* About Us Page */
+
+#about-us {
+    max-width: 1200px;
+    width: 100%;
+    padding-top: 5.25rem;
+}
+
+#about-us .about-us-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+
+#about-us h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 900;
+    padding-bottom: 0.3rem;
+}
+
+#about-us h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.5px;
+    padding-bottom: 0.75rem;
+    font-weight: 900;
+}
+
+#about-us p {
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#about-us ul, #about-us ol {
+    padding-left: 1.5rem;
+}
+
+#about-us li {
+    padding-left: 0.3rem;
+}
+
+#about-us li::marker {
+    font-size: 0.875rem;
+}
+
+#about-us .second-left {
+    padding-bottom: 1rem;
+}
+
+#about-us .second-left li, #about-us .third-left li {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#about-us .second-left a, #about-us .third-left a {
+    color: rgb(29, 185, 84);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#about-us .second-left a:hover, #about-us .third-left a:hover {
+    color: rgb(30, 215, 96);
+}
+
+#about-us .third-left h2 {
+    padding-bottom: 0.5rem;
+}
+
+#about-us .third-left {
+    padding-bottom: 1rem;
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-container .left {
+    min-width: 58%;
+    margin-right: 2rem;
+    flex-grow: 2;
+}
+
+.about-container .right {
+    min-width: 375px;
+    flex-grow: 1;
+}
+
+.about-container .right .right-item {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.about-container .right .right-item address {
+    width: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.about-container .right-item div {
+    width: 50%;
+}
+
+#about-us .first-right h2 {
+    padding-bottom: 1.5rem;
+}
+
+#about-us .right address strong {
+    font-weight: 700;
 }
