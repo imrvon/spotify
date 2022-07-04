@@ -1712,3 +1712,61 @@ input:checked + label .checkboxes {
 #about-us .right address strong {
     font-weight: 700;
 }
+
+/* Free App Page */
+#free .free-top-wrapper {
+    display: flex;
+    justify-content: center;
+    background: url(img/bubbles.svg) center -138px / 100% 1068px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
+}
+
+#free .free-top {
+    display: flex;
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    min-height: 450px;
+}
+
+#free .free-top-item svg {
+    width: 286px;
+    height: 573px;
+}
+
+#free .free-top .one {
+    position: relative;
+    width: 40%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#free .free-top .one-two {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    height: 575px;
+    bottom: -133px;
+    z-index: 1;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+#free .one .one-two img {
+    width: 267px;
+    height: 445px;
+}
+
+#free .two {
+    padding: 11rem 0.9rem 0 0;
+}
+
+#free .two h1 {
+    letter-spacing: -0.04em;
+    line-height: 1.15;
+    font-size: 4rem;
+    max-width: 653px;
+    color: #ffffff;
+    font-weight: 900;
+}
