@@ -1869,7 +1869,7 @@ input:checked + label .checkboxes {
 
 /* Accordion Section */
 .accordion {
-    max-width: 90%;
+    max-width: 93%;
     margin: 0 auto;
     overflow: hidden;
     background: #ffffff;
@@ -1887,6 +1887,8 @@ input:checked + label .checkboxes {
     position: relative;
     transition: background 0.1s;
     font-size: 1.125rem;
+    border: 0;
+    border-bottom: 2px solid #f6f6f6;
 }
 
 .accordion-label:hover {
@@ -1896,20 +1898,20 @@ input:checked + label .checkboxes {
 
 .accordion-label:focus {
     background: #f6f6f6;
+    text-decoration: underline;
 }
 
 .accordion-label::after{
     content: '';
     position: absolute;
-    background: #f6f6f6;
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg id='Layer_1' style='enable-background:new 0 0 50 50%3B' version='1.1' viewBox='0 0 50 50' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Layer_1_1_'%3E%3Cpolygon points='48.707 13.853 47.293 12.44 25 34.732 2.707 12.44 1.293 13.853 25 37.56 '/%3E%3C/g%3E%3C/svg%3E");
-    background-size:24px auto;
+    background-size:cover;
     background-repeat: no-repeat;
     top: 50%;
     transform: translateY(-50%);
-    right: 20%;
-    width: 12px;
-    height: 6px;
+    right: 2%;
+    width: 24px;
+    height: 24px;
 }
 
 .accordion-content {
@@ -1931,3 +1933,14 @@ input:checked + label .checkboxes {
     transform: translateY(-50%) rotate(180deg);
 }
 
+.accordion .accordion-item {
+    margin-bottom: 0.1rem;
+}
+
+.accordion .accordion-item p {
+    font-weight: 300;
+}
+
+.accordion .accordion-item strong {
+    color: #117a37;
+}
