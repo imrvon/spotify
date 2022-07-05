@@ -1769,4 +1769,165 @@ input:checked + label .checkboxes {
     max-width: 653px;
     color: #ffffff;
     font-weight: 900;
+    padding-bottom: 2rem;
 }
+
+#free .two .btn-parent {
+    border-radius: 31.25rem;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    padding: 0.875rem 2rem;
+}
+
+#free .two .btn-parent:hover {
+    transform: scale(1.03);
+}
+
+#free .two .tc-btn {
+    padding: unset;
+}
+
+#free .free-second {
+    padding-bottom: 1rem;
+}
+
+#free .free-second-container {
+    padding: 4.7rem 0.938rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#free .free-second header {
+    margin-bottom: 4.5rem;
+}
+
+#free .free-second h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+#free .free-second-row {
+    display: flex;
+    margin: 1rem 0;
+    gap: 4rem;
+}
+
+#free .free-second-row img {
+    width: 142px;
+    height: 142px;
+    margin-bottom: 2.5rem;
+}
+
+#free .free-second-row .first {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    margin-bottom: 0.625rem;
+    font-weight: 700;
+}
+
+#free .free-second-row .second {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+#free .free-second-row .free-second-item {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#free .free-third {
+    background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+    padding: 11.9rem 0.9rem;
+}
+#free .free-third h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 900;
+    letter-spacing: -0.02rem;
+    line-height: 1.2;
+}
+
+#free .free-fourth {
+    padding: 4.7rem 0.9rem;
+}
+
+#free .free-fourth h2 {
+    font-size: 2.5rem;
+    line-height: 2.875;
+    text-align: center;
+    font-weight: 900;
+}
+
+/* Accordion Section */
+.accordion {
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.accordion-label,
+.accordion-content {
+    padding: 1.625rem 1.75rem;
+}
+
+.accordion-label {
+    display: block;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+    font-size: 1.125rem;
+}
+
+.accordion-label:hover {
+    background: #f6f6f6;
+    text-decoration: underline;
+}
+
+.accordion-label:focus {
+    background: #f6f6f6;
+}
+
+.accordion-label::after{
+    content: '';
+    position: absolute;
+    background: #f6f6f6;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg id='Layer_1' style='enable-background:new 0 0 50 50%3B' version='1.1' viewBox='0 0 50 50' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Layer_1_1_'%3E%3Cpolygon points='48.707 13.853 47.293 12.44 25 34.732 2.707 12.44 1.293 13.853 25 37.56 '/%3E%3C/g%3E%3C/svg%3E");
+    background-size:24px auto;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20%;
+    width: 12px;
+    height: 6px;
+}
+
+.accordion-content {
+    background-color: #ffffff;
+    line-height: 1.6;
+    font-size: 1rem;
+    display: none;
+}
+
+.accordion-input {
+    display: none;
+}
+
+.accordion-input:checked ~ .accordion-content {
+    display: block;
+}
+
+.accordion-input:checked ~ .accordion-label::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
