@@ -1944,3 +1944,24 @@ input:checked + label .checkboxes {
 .accordion .accordion-item strong {
     color: #117a37;
 }
+
+.free-fifth {
+    background: url(img/free-lets-play.svg) left -10px bottom -160px / 100% 1114px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) 16%, rgb(240, 55, 166)) rgb(108, 14, 224);
+}
+
+.free-fifth .free-fifth-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 450px;
+}
+
+.free-fifth h2 {
+    font-size: 5rem;
+    color: #ffffff;
+    padding: 0 6.25rem 2rem;
+    letter-spacing: -0.02rem;
+    line-height: 1.2;
+    font-weight: 900;
+}
