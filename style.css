@@ -1969,7 +1969,7 @@ input:checked + label .checkboxes {
 /* Legal Page */
 
 .legal {
-    padding: 0.5rem 3.5rem 3.75rem;
+    padding: 0.5rem 4rem 3.75rem;
     background-color: #f8f8f8;
 }
 
@@ -2006,6 +2006,7 @@ input:checked + label .checkboxes {
     font-size: 2.5rem;
     margin-bottom: 1.25rem;
     cursor: pointer;
+    font-weight: 900;
 }
 
 .legal h1:hover {
@@ -2052,7 +2053,7 @@ input:checked + label .checkboxes {
     color: #222326;
 }
 
-.legal ul {
+.legal ul, .copyright ol {
     margin-left: 2.5rem;
     padding-left: 1.5rem;
     margin-bottom: 1rem;
@@ -2083,4 +2084,26 @@ input:checked + label .checkboxes {
 
 .legal td {
     font-weight: 300;
+}
+
+.copyright li {
+    padding-left: 0.5rem;
+}
+
+.premium-offer table {
+    width: 100%;
+}
+
+.premium-offer td a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+.premium-offer td a:hover {
+    color: #1ED760;
+    text-decoration: none;
+}
+
+.premium-offer h4 {
+    margin-bottom: 0.5rem;
 }
