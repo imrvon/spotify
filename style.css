@@ -1965,3 +1965,122 @@ input:checked + label .checkboxes {
     line-height: 1.2;
     font-weight: 900;
 }
+
+/* Legal Page */
+
+.legal {
+    padding: 0.5rem 3.5rem 3.75rem;
+    background-color: #f8f8f8;
+}
+
+.legal-top-header {
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
+    padding: 0.9rem 0 1.875rem;
+}
+
+.legal .legal-top-header span {
+    padding: 0.3rem 0;
+}
+
+.legal .legal-top-header span a {
+    color: rgb(34, 35, 38);
+    text-decoration: none;
+}
+
+.legal .legal-top-header .legal-bold {
+    font-weight: 500;
+}
+
+.legal .legal-top-header .selected {
+    background-color: #535353;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.legal h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+}
+
+.legal h1:hover {
+    text-decoration: underline;
+}
+
+.legal p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.legal a {
+    color: #222326;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
+
+.legal .numbering p {
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.legal .numbering a {
+    color: #1DB954;
+    line-height: 1.5;
+}
+
+.legal .numbering a:hover {
+    color: #1ED760;
+}
+
+.legal h2 {
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.legal h2 a {
+    color: #222326;
+}
+
+.legal ul {
+    margin-left: 2.5rem;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.legal li {
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.legal table,
+.legal th,
+.legal tr, 
+.legal td {
+    border: thin solid #efefef;
+    padding: 0.5rem;
+}
+
+.legal table {
+    margin: 1rem 0 2rem;
+    border-collapse: collapse;
+}
+
+.legal th {
+    background-color: #1DB954;
+    text-align: left;
+}
+
+.legal td {
+    font-weight: 300;
+}
